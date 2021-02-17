@@ -11,7 +11,7 @@ function ShelfPage() {
     user_id: "",
   });
   useEffect(() => {
-    dispatch({ type: "FETCH_ITEMS" });
+    dispatch({ type: "FETCH_SHELF" });
   }, []);
 
   const getItems = () => {
