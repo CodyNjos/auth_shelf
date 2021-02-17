@@ -5,36 +5,55 @@ Our client, Prime Digital Academy: Room 2, has asked for an app to simulate the 
 ## Use the Download ZIP Option (Don't Fork & Don't Clone)
 
 **Step 1 - Download ZIP of Project:**
+
 - click on the **Code** button
-    - select the **Download ZIP** option from the menu
+  - select the **Download ZIP** option from the menu
 - file download should appear at the bottom of your web browser
-    - click on the downloaded file icon
+  - click on the downloaded file icon
 - a finder window should open with the assignment folder unzipped in the Downloads directory
 - move the folder to where you are keeping your projects
 
 **Step 2 - Initialize as a Repo:**
+
 - open the project in VSCode
 - open up the terminal in VSCode for the project
-    - *in terminal:* run `git init`
-    - *in terminal:* run `git add .`
-    - *in terminal:* run `git commit -m "initial commit"`
+  - _in terminal:_ run `git init`
+  - _in terminal:_ run `git add .`
+  - _in terminal:_ run `git commit -m "initial commit"`
 
 **Step 3 - Attach GitHub Repo:**
+
 - goto GitHub in the browser (make sure you are logged in)
 - click on the `+` icon in the top right of the window
-    - select **New repository** from the menu
+  - select **New repository** from the menu
 - name your repo **secure-submarine**
 - make sure your repo has **Public** selected
 - click the **Create repository** button at the bottom
 - copy the terminal commands listed in the **…or push an existing repository from the command line** section
 - goto your project terminal in VSCode and paste the commands you just copied from GitHub and press **return**
 
-
 ---
 
 ## Assignment Instructions
 
 ### BASE MODE
+
+Display contents of shelf on ShelfPage at '/shelf'
+[ ] GET route
+
+[ ] Saga / Reducer
+
+[ ] Table on DOM
+
+Add Items to the shelf
+[ ] Inputs on DOM
+
+[ ] POST route for input data
+
+[ ] Saga for axios, calls GET route saga
+
+Delete items from the shelf
+[ ]
 
 #### FEATURES
 
@@ -66,7 +85,6 @@ An authenticated user should be able to delete items from the shelf if they were
 
 ---
 
-
 ## Prerequisites
 
 Before you get started, make sure you have the following software installed on your computer:
@@ -78,7 +96,7 @@ Before you get started, make sure you have the following software installed on y
 ## CREATE DATABASE AND TABLE
 
 Create a new database called `auth_shelf` and create a `user` table:
- user-update
+user-update
 
 ```SQL
 CREATE TABLE "user" (
@@ -183,4 +201,5 @@ This code is also heavily commented. We recommend reading through the comments, 
 ## Update Documentation
 
 Customize this ReadMe and the code comments in this project to read less like a starter repo and more like a project. Here is an example: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+
 # auth_shelf

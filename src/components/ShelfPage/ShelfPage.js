@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function ShelfPage() {
   const dispatch = useDispatch();
@@ -10,11 +10,12 @@ function ShelfPage() {
     description: "",
     user_id: "",
   });
+  useEffect(() => {
+    dispatch({ type: "FETCH_ITEMS" });
+  }, []);
 
   const getItems = () => {
-    axois.get("/shelf").then((response) => {
-      setItemArray(response.data);
-    });
+    dispatch({ type: "SET_ITEMS", payload: item });
   };
   const addItem = (evt) => {
     event.preventDefault();
