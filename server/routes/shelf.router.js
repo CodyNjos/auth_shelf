@@ -46,8 +46,21 @@ router.post("/", (req, res) => {
 /**
  * Delete an item if it's something the logged in user added
  */
-router.delete("/:id", (req, res) => {
-  // endpoint functionality
+router.delete("/delete/:id", (req, res) => {
+  const id = req.params.id;
+  console.log("Deleting favorite at id:", id);
+  const queryText = `DELETE FROM "item" WHERE "id" = $1;`;
+
+  pool
+    .query(queryText, [id])
+    .then(() => {
+      console.log(`Deleted at id: ${id} successfully`);
+      res.sendStatus(204);
+    })
+    .catch((err) => {
+      console.log("Error in delete", err);
+      res.sendStatus(500);
+    });
 });
 
 /**
