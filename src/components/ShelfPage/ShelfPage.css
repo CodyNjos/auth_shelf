@@ -1,0 +1,19 @@
+table {
+  margin: 10px auto 30px auto;
+  min-width: 70%;
+  border-radius: 50px;
+}
+
+table,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+/* tr:nth-child(even) {
+  background: rgb(201, 201, 201);
+} */
+img {
+  max-height: 150px;
+}

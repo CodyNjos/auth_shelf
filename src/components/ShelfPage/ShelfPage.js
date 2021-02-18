@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { useState, useEffect } from "react";
-
+import "./ShelfPage.css";
 function ShelfPage() {
   const dispatch = useDispatch();
   const shelf = useSelector((store) => store.shelf);
@@ -58,6 +58,7 @@ function ShelfPage() {
           <tr>
             <th>Item Description</th>
             <th>Image URL</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -66,7 +67,9 @@ function ShelfPage() {
               return (
                 <tr key={item.id}>
                   <td>{item.description}</td>
-                  <td>{item.image_url}</td>
+                  <td>
+                    <img src={item.image_url} />
+                  </td>
                   <td>
                     <button
                       onClick={() => {
@@ -82,7 +85,9 @@ function ShelfPage() {
               return (
                 <tr key={item.id}>
                   <td>{item.description}</td>
-                  <td>{item.image_url}</td>
+                  <td>
+                    <img src={item.image_url} />
+                  </td>
                   <td></td>
                 </tr>
               );
